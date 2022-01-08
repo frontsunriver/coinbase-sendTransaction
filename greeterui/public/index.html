@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="robots" content="index,follow"/>
+    <meta name="description" content="GamerToken creates a global marketplace for buying and selling unique in-game items on the blockchain. Gamers can finally earn meaningful rewards for in-game activities within a developer-friendly ecosystem.">
+    <meta name="keywords" content="GamerToken">
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:image" content="../cdn.crypto-mmo.com/ggp/gamertoken/gamertoken-play-earn-trade.jpg">
+    <meta property="og:site_name" content="GamerToken - Play. Earn. Trade.">
+    <meta property="og:title" content="GamerToken - Play. Earn. Trade.">
+    <meta property="og:url" content="index.html">
+    <meta property="og:description" content="GamerToken creates a global marketplace for buying and selling unique in-game items on the blockchain. Gamers can finally earn meaningful rewards for in-game activities within a developer-friendly ecosystem.">
+    <link rel="apple-touch-icon" sizes="57x57" href="ggp/gamertoken/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="ggp/gamertoken/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="ggp/gamertoken/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="ggp/gamertoken/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="ggp/gamertoken/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="ggp/gamertoken/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="ggp/gamertoken/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="ggp/gamertoken/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="ggp/gamertoken/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="ggp/gamertoken/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ggp/gamertoken/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="ggp/gamertoken/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ggp/gamertoken/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="ggp/gamertoken/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../cdn.crypto-mmo.com/ggp/gamertoken/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="preload" href="font-awesome/4-7-0/css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="ggp/gamertoken-css/semantic-ui.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/slick.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="ggp/gamertoken-css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" type="text/css" href="font-awesome/4-7-0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="ggp/gamertoken-css/semantic-ui.css"/>
+      <link rel="stylesheet" type="text/css" href="css/slick.min.css"/>
+      <link rel="stylesheet" type="text/css" href="ggp/gamertoken-css/style.min.css"/>
+    </noscript>
+    <script>
+    /*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+    !function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+    </script>
+    <style type="text/css">
+    @charset "utf-8";*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;border:0}:focus{outline:none}body{background-color:#fff;color:#9e9e9e;margin:0;padding:0;font:400 12px/1.2 Roboto,sans-serif}h1{font:500 70px/1.1 Roboto,sans-serif;color:#fff;text-align:center;text-transform:uppercase}h2{font:500 45px/1.2 Roboto,sans-serif;color:#fff;text-align:center;text-transform:uppercase;margin-bottom:25px}h2 .subline{font:500 30px/1.2 Roboto,sans-serif;color:#ccc;display:block}h3{font:500 21px/1.2 Roboto,sans-serif;color:#fff;padding:10px 0}a{cursor:pointer}p{font:400 16px/1.2 Roboto,sans-serif;color:#fafafa;text-align:justify;padding-bottom:20px}section{position:relative}.row{margin-right:-15px;margin-left:-15px}.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.container-fluid{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}@media screen and (max-width: 768px){.container{padding-right:20px;padding-left:20px}h2{font:500 33px/1.2 Roboto,sans-serif}}.clear{clear:both}.btn-round{color:#fff;background:none;padding:5px 13px;border:1px solid #fff;text-decoration:none;border-radius:20px;font-size:18px}.btn-round-white-gradient{background:#fff;padding:5px 13px;border:1px solid #fff;text-decoration:none;border-radius:20px;font-size:18px}.blue-green-gradient{background-repeat:repeat-x;background-image:linear-gradient(135deg,rgba(1,198,219,1),rgba(116,219,35,1));background-clip:text;-webkit-background-clip:text;text-fill-color:transparent;-webkit-text-fill-color:transparent}.btn-round-gradient-white{color:#fff;background:none;padding:5px 13px;border:1px solid #fff;text-decoration:none;border-radius:20px;font-size:18px;background-repeat:repeat-x;background-image:-webkit-linear-gradient(top left,rgba(1,198,219,1),rgba(116,219,35,1));background-image:-o-linear-gradient(top left,rgba(1,198,219,1),rgba(116,219,35,1));background-image:linear-gradient(to bottom right,rgba(1,198,219,1),rgba(116,219,35,1))}#telegram{position:fixed;bottom:25px;right:25px;width:100px;height:100px;background:transparent url(ggp/gamertoken/social/telegram-logo.png) no-repeat center top/cover;text-decoration:none;z-index:99;display:none}#telegram span{color:#fff;text-shadow:2px 2px 5px rgba(0,0,0,0.5);display:block;margin-top:100px;width:120px;margin-left:-10px}@media screen and (max-width: 480px){.whitepaper{display:none}#telegram{position:fixed;bottom:0;right:0;width:100%;height:60px;background:#1377ba;text-decoration:none;z-index:99;border-top:1px solid #fff;display:block}#telegram::before{content:'';background:transparent url(ggp/gamertoken/social/telegram-logo.png) no-repeat center top/cover;width:45px;height:45px;position:absolute;top:7px;left:7px;right:0}#telegram span{color:#fff;text-shadow:2px 2px 5px rgba(0,0,0,0.5);display:block;margin-top:15px;width:auto;margin-left:60px;font-size:24px}}.social ul{list-style:none}.social ul li{float:left;width:30px;height:30px;text-align:left;margin:5px 25px 25px 0}.social ul li a{color:#fff}.fa{font-size:20px}.fa-discord{background:transparent url(ggp/gamertoken/social/discord.png) no-repeat center top/cover;width:20px;height:20px}#menu{position:fixed;width:100%;height:50px;background-color:rgba(0,0,0,0.3);z-index:10}#menu ul{width:1200px;list-style:none;margin:15px auto}#menu ul li{float:left;padding-left:25px}#menu ul li:first-child{padding-right:100px;text-transform:uppercase;background:transparent url(ggp/gamertoken/gamertoken_logo_small.png) no-repeat left top/contain}#menu ul li a{color:#fff;text-decoration:none;font-size:15px;font-weight:500}.gamertoken{color:#fff;text-decoration:none;font-size:15px;font-weight:500}.ui.menu{font-size:1rem;margin-top:10px}.right.item{float:right;line-height:25px!important}.right.item .toc.item{display:inline-flex!important}.right.item .toc.item .fa{line-height:25px}.ui.menu .item{position:relative;vertical-align:middle;line-height:1;text-decoration:none;-webkit-tap-highlight-color:transparent;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background:none;padding:.92857143em 1.14285714em;text-transform:none;color:rgba(0,0,0,0.87);font-weight:400;-webkit-transition:background .1s ease,color .1s ease,-webkit-box-shadow .1s ease;transition:background .1s ease,color .1s ease,-webkit-box-shadow .1s ease;transition:background .1s ease,box-shadow .1s ease,color .1s ease;transition:background .1s ease,box-shadow .1s ease,color .1s ease,-webkit-box-shadow .1s ease}#menu .ui.menu .item.gamertoken{padding-right:50px;padding-left:35px;text-transform:uppercase;background:transparent url(ggp/gamertoken/gamertoken_logo_small.png) no-repeat left top/contain;line-height:27px;font-size:17px;display:inline-block}#menu .ui.menu .item{color:#fff;font-size:15px;font-weight:500;padding:0 0 0 25px;cursor:pointer}#menu .ui.menu .btn-round-white-gradient,#menu .ui.menu .btn-round-gradient-white .fa{text-decoration:none;font-size:15px;font-weight:500}.ui.inverted.menu .item,.ui.inverted.menu .item > a:not(.ui){background:transparent;color:rgba(255,255,255,0.9)}.ui.vertical.menu .item{display:block;background:none;border-top:none;border-right:none}.ui.inverted.menu{border:0 solid transparent;background:#1B1C1D;-webkit-box-shadow:none;box-shadow:none}.ui.vertical.menu{display:block;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-shadow:0 1px 2px 0 rgba(34,36,38,0.15);box-shadow:0 1px 2px 0 rgba(34,36,38,0.15)}.ui.vertical.inverted.menu .item:before{background:rgba(255,255,255,0.08)}.ui.vertical.sidebar.menu > .item::before{top:auto;bottom:0}.ui.inverted.menu .item:before{background:rgba(255,255,255,0.08)}.ui.vertical.menu .item:before{position:absolute;content:'';top:0;left:0;width:100%;height:1px;background:rgba(34,36,38,0.1)}.ui.link.inverted.menu .item:hover,.ui.inverted.menu .dropdown.item:hover,.ui.inverted.menu .link.item:hover,.ui.inverted.menu a.item:hover{background:rgba(255,255,255,0.08);color:#fff;cursor:pointer}.ui.secondary.menu .dropdown.item > .menu,.ui.text.menu .dropdown.item > .menu{border-radius:.28571429rem;margin-top:12px}.ui.menu .dropdown.item .menu{min-width:calc(100% - 1px);border-radius:0 0 .28571429rem .28571429rem;background:#FFF;margin:0;-webkit-box-shadow:0 1px 3px 0 rgba(0,0,0,0.08);box-shadow:0 1px 3px 0 rgba(0,0,0,0.08);-webkit-box-orient:vertical!important;-webkit-box-direction:normal!important;-ms-flex-direction:column!important;flex-direction:column!important}.ui.menu .ui.dropdown.item .menu .item:not(.filtered){display:block}.ui.menu .ui.dropdown .menu > .item{margin:0;text-align:left;font-size:1em!important;padding:.78571429em 1.14285714em!important;background:transparent!important;text-transform:none!important;font-weight:400!important;-webkit-box-shadow:none!important;box-shadow:none!important;-webkit-transition:none!important;transition:none!important}.ui.menu .ui.dropdown .menu > .item a{color:rgba(0,0,0,0.87)!important;text-decoration:none}.ui.dropdown .menu>.header{margin:1rem 0 .75rem;padding:0 1.14285714rem;color:rgba(0,0,0,.85);font-size:.78571429em;font-weight:700;text-transform:uppercase}.ui.dropdown .menu>*{white-space:nowrap}@media screen and (max-width: 1200px){#menu ul{width:100%;padding:0 20px}#softcap img,#hardcap imp{width:100%}}@media screen and (min-width: 769px){#menu .toc.item{display:none}}@media screen and (max-width: 768px){#menu .item.mob{display:none!important}#menu .toc.item{display:inline-flex;cursor:pointer;margin-right:15px}}@media screen and (max-width: 480px){#menu .ui.menu .item.gamertoken{padding-right:0}}#main{background:#000 url(ggp/gamertoken/bg_gamertoken_head.jpg) no-repeat center top/cover;min-height:1750px}#main .main-inner,#main .main-inner-bottom{padding-top:150px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:start;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start}#main .main-inner-bottom{padding-top:0}#main h1{margin:25px auto;text-align:left}#main h1 span.first-line{display:block;font-size:42px}#main .main-left{width:45%}#main .main-pdf{margin:20px 0 30px}#main .countdown h3{font-size:30px;font-weight:300;margin:10px 0 15px}#main .main-pdf .btn-round{margin-right:25px;display:inline-block;margin-bottom:20px}#main .main-right{width:50%;padding-top:31px}#main .newsletter_signup{margin-top:0}#main .newsletter_signup h3{font-size:35px;font-weight:400;margin:60px 0 0;padding:0;text-transform:uppercase}#main .newsletter_signup p{padding-bottom:20px}#main .newsletter_signup form{padding:10px 20px;width:100%}#main .newsletter_signup form input[type=email]{border:none;background:none;padding:5px;color:#666;font-size:17px;width:100%}#main .newsletter_signup form input[type=text]:focus{outline:none;cursor:text}::-webkit-input-placeholder{color:grey}:-ms-input-placeholder{color:grey}::-moz-placeholder{color:grey;opacity:.9}:-moz-placeholder{color:grey;opacity:.9}#main .newsletter_signup form input[type=text]:focus::-webkit-input-placeholder{color:transparent}#main .newsletter_signup form button{display:block;cursor:pointer;background-color:transparent}#main #mc_embed_signup_scroll{position:relative}#main #mc_embed_signup{background:#fff;clear:left;font:400 20px/25px Roboto,sans-serif;border-radius:30px;border:none;box-shadow:2px 2px 10px rgba(0,0,0,0.2);text-align:center;margin-bottom: 50px;}#main #mc_embed_signup .btn-round-gradient-white{padding:7px 35px;font-size:18px;position:absolute;right:-9px;top:-3px;background:#01c6db}#main #mc_embed_signup .btn-round-white-gradient:hover{background:#01aadb}.success-message{display:inline;font-size:16px;line-height:30px;color:#99A;text-align:left}.success-icon{float:right}.success-icon .fa{color:#01c6db}#main .main-right .demo .btn-round{display:block;width:80%;border-radius:5px;font:500 30px/48px Roboto,sans-serif;text-transform:uppercase;text-align:center;margin:25px auto}#main .main-right .telegram .btn-round{display:block;width:313px;border-radius:5px;font:500 21px/38px Roboto,sans-serif;text-transform:uppercase;text-align:center;margin:40px 18px 45px 20px;background:#34b4ef;border:1px solid #1378bb}#main .main-right .telegram .fa{font-size:35px;padding-right:20px;line-height:38px;float:left}#main .main-right .main-btn-group{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:space-around;display:flex;position:relative;width:100%;margin:0px auto 0}#main .main-right .contribute{text-align:center;margin-right:15%}#main .main-right .contribute a{color:#fff;font:400 16px/38px Roboto,sans-serif;margin:12px 0;display:inline-block}#main .main-right .demo .btn-round,#main .main-right .contribute .btn-round{display:block;width:300px;border-radius:5px;font:500 18px/22px Roboto,sans-serif;text-transform:uppercase;text-align:center;margin:5px 0;padding: 13px 20px;}#main .supported-by{display:table;color:#fff;font:300 18px/1.2 Roboto,sans-serif;padding-top:95px;width:100%;text-align:center}#main .supported-by span{margin-right:-10px}#main .supported-by .support-left{margin-right:20px}#main .supported-by .support-left img{width:82px;vertical-align:middle}#main .supported-by .support-right img{width:260px;vertical-align:middle}#main .fa{font-size:30px}.main-btn-group .demo{margin:0 auto}@media screen and (min-width: 992px) and (max-width: 1199px){#main .main-inner{padding:80px 20px 40px}#main .main-right{width:50%;padding-top:120px}#main .supported-by{padding-top:5px}}@media screen and (max-width: 992px){#main .main-inner{text-align:left;padding:80px 20px 40px;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}#main .main-left{width:100%}#main .main-right{width:100%}#main .supported-by{padding-top:5px}#main .newsletter_signup h3{text-align:left}}@media screen and (max-width: 768px){#main h1{font-size:60px}.main-left .social ul{display:flex;justify-content:center}#main .main-right .supported-by{padding-top:35px}#main .main-right .supported-by img{width:270px;vertical-align:middle}#main .sup-img img{width:90%}}@media screen and (max-width: 480px){#main h1{font-size:42px}#main .main-inner{padding:80px 0 40px}#main h1 span.first-line{font-size:32px}.main-left .social ul{display:block}#main .main-left .logo img{width:100%}#main .newsletter_signup h3{font-size:30px}#main #mc_embed_signup{border-radius:10px}#main .newsletter_signup form{min-height:120px;padding:20px;width:100%}#main .newsletter_signup form input[type=email]{border-bottom:1px solid #ccc}#main .newsletter_signup form button{padding:5px 33px}#main .main-right .demo .btn-round{width:100%}#main #mc_embed_signup .btn-round-gradient-white{padding:7px 35px;font-size:18px;position:absolute;right:50%;margin-right:-64px;top:50px}#main .main-right .contribute{text-align:center;margin:auto}#main .main-right .supported-by{padding-top:35px;font-size:16px}#main .main-right .supported-by img{width:180px;vertical-align:middle}#main .sup-img img{width:100%}.success-icon{float:none;display:block}.success-icon .fa{color:#01c6db;font-size:60px}}@media screen and (max-width: 391px){#main .supported-by .support-left{margin-bottom:-10px;display:block}}@media screen and (max-width: 360px){#main .main-left .logo img{width:100%}#main h1{font-size:32px}#main h1 span.first-line{font-size:22px}#main .main-right .main-btn-group{padding:0 15px}}.join-our-community{height:auto;width:210px;position:fixed;right:10px;bottom:10px;background-color:#2f80ed;padding:15px 20px;border-radius:10px;color:#fff;text-align:center;z-index:100}#close{position:absolute;top:0;right:10px;background:none;border:none;color:#fff;font:500 17px/27px Roboto,sans-serif;cursor:pointer}.join-header{margin-bottom:10px;font:400 16px/18px Roboto,sans-serif;margin-top:0}.join-our-community .fa{float:left;padding:10px 0 8px 8px}.join-our-community a{display:block;border-radius:30px;padding:0 15px;font:400 16px/40px Roboto,sans-serif;text-decoration:none;color:#fff;background-color:#5798f0;height:40px;width:100%;transition:.3s;-webkit-transition:.3s;margin-top:9px;-webkit-box-shadow:0 2px 10px rgba(0,0,0,.15);box-shadow:0 2px 10px rgba(0,0,0,.15)}.join-our-community a:hover{background-color:#60a7ff}@media screen and (max-width: 480px){.join-our-community{display:none}}#cnc{position:fixed;bottom:0;right:0;z-index:101;background:rgba(17,21,27,0.95);background:-webkit-linear-gradient(rgba(44,49,64,1) 0%,rgba(17,21,27,0.95) 100%);background:-o-linear-gradient(rgba(44,49,64,1) 0%,rgba(17,21,27,0.95) 100%);background:linear-gradient(rgba(44,49,64,1) 0%,rgba(17,21,27,0.95) 100%);box-shadow:0 8px 10px 0 rgba(0,0,0,0.2);border-radius:5px;width:400px;height:auto;padding:10px 5px;margin:10px}#cnc .cnc-close{position:absolute;top:5px;right:10px;color:#fff;font-size:17px;cursor:pointer}#cnc .cnc-content{color:#fff;padding:20px}#cnc .cnc-header{font-size:18px;padding-bottom:10px}#cnc .cnc-content a{color:#01c6db}@media screen and (max-width:480px){#cnc{width:100%;margin:0;border-radius:0;bottom:58px}}[data-tooltip][data-inverted]::after{background:#1b1c1d;color:#fff;border:none;-webkit-box-shadow:none;box-shadow:none;font-size:12px}#main .ui.popup .content{font-size:14px;color:#c00;width:250px}#main .ui.popup .content .fa{font-size:18px}#opd,#wpd{display:block;width:150px;background:#01c6db;border:1px solid #fff;font-size:18px;text-decoration:none;text-align:center;border-radius:20px;color:#fff;padding:7px 35px;margin:0 auto 20px}.modal .disabled{opacity:.45;cursor:default;pointer-events:none}.mini.modal{background:#fff url(ggp/gamertoken/bg_gamertoken_head.jpg) no-repeat center -230px/cover}.mini.modal .header{color:#fff;text-shadow:1px 1px 3px rgba(0,0,0,0.5),0 0 6px rgba(0,0,0,0.25);background:none;border:none}.mini.modal .header img{float:left;margin-right:10px;margin-top:-5px}.mini.modal .content{background:none;padding-top:50px}.mini.modal .content p{color:#333;font-size:15px}.mini.modal .content a{color:#01c6db;font-size:15px}@media only screen and (min-width: 1200px){.ui.mini.modal{width:380px;margin:0}}@media only screen and (min-width: 992px){.ui.mini.modal{width:380px;margin:0}}@media only screen and (min-width: 768px){.ui.mini.modal{width:380px;margin:0}}@media only screen and (max-width: 768px){#opd,#wpd{margin:0 auto}.mini.modal{background:#fff url(ggp/gamertoken/bg_gamertoken_head.jpg) no-repeat center top/cover}.mini.modal .content{background:#fff}.mfooter{background:#fff;padding-bottom:20px}}@media screen and (max-width: 768px){body,p,li{-webkit-text-size-adjust:none}};
+    @media screen and (max-width: 480px){h2{font-size:29px}p{text-align:justify}#menu .ui.menu .item{padding: 0 0 0 15px;}#menu .ui.menu .btn-round-white-gradient{font-size:14px;}#dclose{position: absolute;top: -16px;right: 0px;background: none;border: none;color: #fff;cursor: pointer;z-index: 25;width: 100px;height: 70px;text-align: right;padding-right: 10px;}}
+    @media screen and (max-width: 320px){ #menu .container{ padding-left: 10px; padding-right: 10px;}#menu .ui.menu .item{padding: 0 0 0 10px;} #menu .toc.item{margin-right: 5px;}}
+    #telegram-focus{display:inline-block;position:relative;background:#279fd3;border:2px solid #fff;box-shadow:0 2px 4px rgba(0,0,0,.15);border-radius:30px;padding:12px 60px 12px 95px;color:#fff;font:500 21px Roboto,sans-serif;text-decoration:none;text-transform:uppercase}#telegram-focus::before{content:'';position:absolute;left:35px;top:8px;background:url(ggp/gamertoken/social/telegram.png) left center/cover no-repeat;width:40px;height:35px}@media screen and (max-width: 358px){#telegram-focus::before {content: '';position: absolute;left: 15px;top: 10px;background: url(ggp/gamertoken/social/telegram.png) left center/cover no-repeat;width: 60px;height: 55px;}}
+    @media all and (-ms-high-contrast: none),(-ms-high-contrast: active) {
+      .blue-green-gradient {color: #279fd3;background: transparent;}
+      #main #mc_embed_signup .btn-round-gradient-white{right: -13px; top:-6px}
+    }
+    </style>
+    <style type="text/css">
+      .ui.secondary.inverted.pointing.menu {
+        border-width: 0;
+        border-color: none;
+      }
+      .ui.sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transition: none;
+        transition: none;
+        will-change: transform;
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        visibility: hidden;
+        -webkit-overflow-scrolling: touch;
+        height: 100%!important;
+        max-height: 100%;
+        border-radius: 0!important;
+        margin: 0!important;
+        overflow-y: auto!important;
+        z-index: 102;
+      }
+      .slick-list{
+          max-width: 1110px;
+      }
+      /* ------------ The Gamertoken prototypes ----------- */
+      #main{
+        background: #fff url('ggp/gamertoken/bg_gamertoken_head.jpg') no-repeat center top/cover;
+        min-height: 1750px;
+        /*background: #000 url(ggp/gamertoken/bg_gamertoken_head_extended.jpg) no-repeat center top/cover;
+        min-height: 3020px;*/
+      }
+      #marketplace-focus{
+        display: inline-block;
+        position: relative;
+        background: #ff7f3C;
+        border: 2px solid #fff;
+        box-shadow: 0 2px 4px rgba(0,0,0,.15);
+        border-radius: 30px;
+        padding: 12px 60px 12px 90px;
+        color: #fff;
+        font: 500 25px Roboto,sans-serif;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin: 35px 0px;
+      }
+      #marketplace-focus:hover{
+        background: #ff8f4C;
+      }
+      #playerContainer{
+        background-color:black;
+        width:100%;
+        height:100%;
+        text-align:center;
+        position: fixed;
+        z-index: 1000;
+      }
+      .typewriter h1 {
+        color: #fff;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid orange; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation:
+          typing 1.5s steps(30, end),
+          blink-caret .5s step-end infinite;
+        animation-direction: alternate;
+      }
+      /* The typing effect */
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: white }
+      }
+      #playButton	{
+        position: absolute;
+        z-index: 11;
+        color: #FDE;
+        font-size: 150px !important;
+        padding: 122px 272px;
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      #hero-video-container{
+        padding-top: 75px;
+        transform: scale(0.8);
+          margin: 0px auto 65px;
+        width: 670px;
+        height: 572px;
+      }
+      #trailer-bg	{
+        width: 670px;
+        height: 562px;
+      }
+      #trailer  {
+        position: absolute;
+        z-index: 10;
+        width: 642px;
+        margin-left: 14px;
+        margin-top: 17px;
+        border-radius: 5px;
+      }
+      @media (max-width:1350px)	{
+        #playButton	{
+          padding: 97px 213px;
+          font-size: 100px !important;
+        }
+        #trailer{
+          width: 500px;
+          margin-left: 5px;
+          margin-top: 7px;
+        }
+        #hero-video-container,
+        #trailer-bg	{
+          width: 510px;
+          height: 418px;
+        }			
+      }
+      @media (max-width:600px)	{
+        #playButton	{
+          padding: 58px 122px;
+          font-size: 60px !important;
+        }
+        #trailer{
+          width: 284px;
+          margin-left: 5px;
+          margin-top: 7px;
+        }
+        #hero-video-container,
+        #trailer-bg	{
+          width: 295px;
+          height: 247px;
+        }
+      }
+      #tempostorm{
+        position: fixed;
+        right: 10px;
+        bottom: 65px;
+        z-index: 25;
+        display: none;
+      }
+      @media screen and (max-width: 992px){
+        #tempostorm{
+          display: none;
+        }
+      }
+      .join-our-community{
+        display: block;
+      }
+      .dragon-banner{
+          position: relative;
+        width: 283px;
+        height: 200px;
+        background: transparent url(ggp/gamertoken/banner/tempostorm_bazaar_banner.jpg) no-repeat center top/cover;
+        z-index: 10;
+        border-radius: 5px;
+      }
+      .dragon-head{
+        position: absolute;
+        top: 48px;
+        left: -6px;
+        width: 190px;
+        height: 210px;
+        background: transparent url(ggp/gamertoken/banner/bazaar_dragon_head.png) no-repeat center top/cover;
+        z-index: 20;
+        -webkit-animation: dragon 3s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        -moz-animation: dragon 3s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        animation: dragon 3s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+      }
+      #dclose{
+        position: absolute;
+        top: 6px;
+        right: 8px;
+        background: none;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        z-index: 25;
+      }
+      @-webkit-keyframes dragon {
+        0% {
+        -webkit-transform: translate3d(2%,0,0) rotateZ(1deg);
+        -moz-transform: translate3d(2%,0,0) rotateZ(1deg);
+        transform: translate3d(2%,0,0) rotateZ(1deg);
+        }
+        100% {
+        -webkit-transform: translate3d(1%,1%,0) rotateZ(7deg);
+        -moz-transform: translate3d(1%,1%,0) rotateZ(7deg);
+        transform: translate3d(1%,1%,0) rotateZ(7deg);
+        }
+      }
+      @-moz-keyframes dragon {
+        0% {
+        -webkit-transform: translate3d(2%,0,0) rotateZ(1deg);
+        -moz-transform: translate3d(2%,0,0) rotateZ(1deg);
+        transform: translate3d(2%,0,0) rotateZ(1deg);
+        }
+        100% {
+        -webkit-transform: translate3d(1%,1%,0) rotateZ(7deg);
+        -moz-transform: translate3d(1%,1%,0) rotateZ(7deg);
+        transform: translate3d(1%,1%,0) rotateZ(7deg);
+        }
+      }
+      @keyframes dragon {
+        0% {
+        -webkit-transform: translate3d(2%,0,0) rotateZ(1deg);
+        -moz-transform: translate3d(2%,0,0) rotateZ(1deg);
+        transform: translate3d(2%,0,0) rotateZ(1deg);
+        }
+        100% {
+        -webkit-transform: translate3d(1%,1%,0) rotateZ(7deg);
+        -moz-transform: translate3d(1%,1%,0) rotateZ(7deg);
+        transform: translate3d(1%,1%,0) rotateZ(7deg);
+        }
+      }
+    </style>
+    <style type="text/css">
+    .first{
+      height: 48px;
+      width: 196px;
+      position: absolute;
+      bottom: 1px;
+      left: 12px;
+    
+    }
+    
+    #main{
+        /*min-height: 3000px;*/
+      }
+      #main .newsletter_signup h3 {
+        margin: 40px 0 0;
+      }
+      #main .countdown h3 {
+        font-size: 30px;
+        font-weight: 300;
+        margin: 10px 0 15px;
+        text-transform: uppercase;
+        padding: 20px 40px 10px 40px;
+      }
+      #main .main-right{
+        position: relative;
+      }
+      .gtxsa{
+        position: relative;
+        width: 284px;
+        height: 201px;
+        background: transparent url(ggp/gamertoken/banner/gtx-sale-at.png) no-repeat center top/cover;
+        z-index: 10;
+        border-radius: 5px;
+      }
+      #char_right{
+        position: absolute;
+        top: -100px;
+        right: -400px;
+        width: 560px;
+        height: 831px;
+      }
+      @media screen and (min-width: 1200px) and (max-width: 1440px){
+        #char_right{
+          transform: scale(0.75);
+          right: -320px;
+        }
+      }
+      @media screen and (min-width: 992px) and (max-width: 1199px){
+        #char_right {
+          transform: scale(0.65);
+          right: -332px;
+          top: -60px;
+        }
+      }
+      @media screen and (min-width: 768px) and (max-width: 991px){
+        #char_right {
+          transform: scale(0.65);
+          right: -300px;
+          top: -120px;
+        }
+      }
+      @media screen and (min-width: 768px){
+        #char_right{
+          background: url(ggp/gamertoken/fox-boy.png) no-repeat center top/cover;
+        }
+      }
+      @media screen and (max-width: 767px){
+        #char_right{
+          display: none;
+        }
+      }
+      #char_right::after {
+        position: absolute;
+        top: 380px;
+        left: 90px;
+        background: transparent url(ggp/gamertoken/clock.png) no-repeat scroll center top / 100% 100%;
+        width: 70px;
+        height: 75px;
+        -webkit-animation: clock 3s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        animation: clock 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        z-index: 10;
+        content: '';
+      }
+      @-webkit-keyframes clock{
+          0% {transform: translate(-3px, 0px) rotate(8deg);}
+          100% {transform: translate(3px, 0px) rotate(-8deg);}
+      }
+      @keyframes clock{
+          0% {transform: translate(-3px, 0px) rotate(8deg);}
+          100% {transform: translate(3px, 0px) rotate(-8deg);}
+      }
+      /* ---------------- countdown ------------------ */
+      .countdown{
+        text-align: center;
+        background: rgba(0,0,0,0.4);
+        border-radius: 10px;
+        margin-top: 55px;
+      }	
+      .countdown a.btn-round-white-gradient{
+        margin-bottom: 2rem;
+        display: inline-block;
+        font-weight: 700;
+      }
+      .js-countdown {
+        margin-bottom: 3rem;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      .js-countdown-block {
+        line-height: 16px;
+        padding: 12px 32px;
+        color: #fff;
+        display: inline-block;
+      }
+      .js-cd-days,
+      .js-cd-hours,
+      .js-cd-minutes,
+      .js-cd-seconds{
+        line-height: 16px;
+        font-weight: 700;
+        font-size: 50px;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+      .js-cd-small {
+        font-size: 14px;
+        line-height: 18px;
+      }
+      .js-bl{
+        border-left: solid 1px transparent;
+        border-color: rgba(255, 255, 255, 0.4);
+      }
+      @media screen and (min-width: 992px) and (max-width: 1200px){
+        .js-countdown-block {
+          padding: 12px 16px;
+        }
+        .js-cd-days,
+        .js-cd-hours,
+        .js-cd-minutes,
+        .js-cd-seconds{
+          font-size: 40px;
+        }
+      }
+      @media screen and (max-width: 991px){
+        .js-countdown-block {
+          padding: 12px 22px;
+        }
+        .js-cd-days,
+        .js-cd-hours,
+        .js-cd-minutes,
+        .js-cd-seconds{
+          font-size: 40px;
+        }
+        #main .countdown h3 {
+          font-size: 28px;
+        }
+      }
+      @media screen and (min-width: 768px) and (max-width: 991px){
+        #main .countdown h3 {
+          padding: 20px 70px 10px 70px;
+        }
+      }
+      @media screen and (max-width: 480px){
+        .js-countdown-block {
+          padding: 12px 10px;
+        }
+        .js-cd-days,
+        .js-cd-hours,
+        .js-cd-minutes,
+        .js-cd-seconds{
+          font-size: 30px;
+        }
+        #main .countdown h3 {
+          font-size: 25px;
+        }
+      }
+      @media screen and (max-width: 320px){
+        .js-countdown-block {
+          padding: 12px 8px;
+        }
+        .js-cd-small{
+          font-size: 12px;
+        }
+      }
+      .token-register{
+        font-size: 24px;
+        line-height: 26px;
+        font-weight: 400;
+        margin: 60px 0 19px;
+        padding: 9px 50px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 700;
+        color: #fff;
+        border: 1px solid rgba(0,0,0,0.5);
+          background: rgb(21, 202, 248);
+      }
+      @media screen and (min-width: 1200px){
+        .wigt-dwarf {
+          top: 320px;
+          right: -260px;
+        }
+        .wigt-girl {
+          top: -20px;
+          right: -447px;
+        }
+        .wigt-items {
+          top: 150px;
+        }
+      }
+      @media screen and (max-width: 1199px) and (min-width: 992px){
+        .wigt-dwarf {
+          top: 350px;
+              right: -200px;
+        }
+        .wigt-girl {
+          top: 80px;
+        }
+        .wigt-items {
+          top: 200px;
+        }
+      }
+      @media screen and (max-width: 991px) and (min-width: 768px){
+        .wigt-dwarf {
+          top: 390px;
+          right: -200px;
+        }
+      }
+    </style>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      dataLayer.push({
+        'type':'GamerToken Website ',
+        'page':'Home',
+        'language':'en'
+      });
+    </script>
+    <!-- Tracking -->
+      <script>
+      dataLayer.push({
+        'utm_source':'organic',
+        'utm_campaign':'',
+        'utm_medium':'',
+        'utm_term':'',
+        'utm_content':''
+      });
+    </script>
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="ajax/libs/jquery/3-2-1/jquery.min.js"></script>
+    <script type="text/javascript" src="ggp/gamertoken-js/slick.min.js"></script>
+    <script type="text/javascript" src="ggp/gamertoken-js/semantic-ui.js"></script>
+    <script type="text/javascript" src="ggp/gamertoken-js/jquery.countdown.min.js"></script>
+    <script src="ggp/gamertoken-js/lazysizes.min.js"></script>
+    <script src="ggp/gamertoken-js/scrollreveal.min.js"></script>
+    <script type="text/javascript">
+      $(document).scroll(function() {
+        if(!sessionStorage.getItem('anc_close')){
+          var y = $(this).scrollTop();
+          if (y > 250) {
+          $('#tempostorm').fadeIn();
+          } else {
+          $('#tempostorm').fadeOut();
+          }
+        }
+      });
+      $(document).ready(function(){
+        function showSC(){$("#shc-switch").html("Hardcap"),$("#shc-switch").attr("data-shc","hardcap"),$("#hardcap").hide(),$("#softcap").show()}function showHC(){$("#shc-switch").html("Softcap"),$("#shc-switch").attr("data-shc","softcap"),$("#hardcap").show(),$("#softcap").hide()}function validateEmail(o){return/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/.test(o)}$(".wpd").click(function(o){$(".mini.white.modal").modal("show")}),$(".opd").click(function(o){$(".mini.one.modal").modal("show")}),$("#wpd").on("click",function(){$(".mini.white.modal").modal("hide")}),$("#opd").on("click",function(o){$(".mini.one.modal").modal("hide")}),$("#wpd-cb").on("click",function(o){$("#wpd-cb").is(":checked")?$("#wpd").removeClass("disabled"):$("#wpd").addClass("disabled")}),$("#opd-cb").on("click",function(o){$("#opd-cb").is(":checked")?$("#opd").removeClass("disabled"):$("#opd").addClass("disabled")}),$("a").on("click",function(o){if(""!==this.hash){o.preventDefault();var e=this.hash;$("html, body").animate({scrollTop:$(e).offset().top},800,function(){window.location.hash=e})}}),$(".cnc-close").on("click",function(o){$("#cnc").hide()}),$("#shc-switch").on("click",function(o){"softcap"==$("#shc-switch").attr("data-shc")?showSC():showHC()}),$("#softcap").on("click",function(o){showHC()}),$("#hardcap").on("click",function(o){showSC()}),$(".masthead").visibility({once:!1,onBottomPassed:function(){$(".fixed.menu").transition("fade in")},onBottomPassedReverse:function(){$(".fixed.menu").transition("fade out")}}),$(".ui.sidebar").sidebar("attach events",".toc.item"),$(".ui.sidebar a.item").on("click",function(){$(".ui.sidebar").sidebar("hide")}),$(".ui.dropdown").dropdown(),$("#close").on("click",function(){$(".join-our-community").hide()}),$("#dclose").on("click",function(){$("#tempostorm").hide(); sessionStorage.setItem('anc_close', false);}),$("#email").popup("hide"),$("#mc-embedded-subscribe").on("click",function(o){o.preventDefault();var e=$("#email").val();validateEmail(e)&&""!=e?$("#submitContact").submit():$("#email").popup({html:'<div class="content"><i class="fa fa-exclamation-circle"></i> Please enter a valid e-mail-address</div>',show:!1,position:"top center",inline:!0,transition:"slide up"}).popup("show")}),$(".partners-button").on("click",function(o){$(".partners-button").popup({html:'<div class="content">If you\'d like to become a partner of the project please contact us at: <span class="popupmail">partner@gamertoken.com</span></div>',show:!1,position:"top center",inline:!0,transition:"slide up"}).popup("show")}),window.lazySizesConfig=window.lazySizesConfig||{},window.lazySizesConfig.lazyClass="lazyload",lazySizesConfig.loadMode=1,lazySizesConfig.preloadAfterLoad=!0;var benh={origin:"top",distance:"24px",duration:500,scale:1.05},benb={origin:"top",distance:"64px",duration:500,delay:200,scale:1},ecosp={origin:"top",distance:"32px",duration:600,delay:200,scale:0},eco={reset:!0,viewOffset:{top:64}};window.sr=ScrollReveal({duration:500}),sr.reveal(".ecosystem-header",eco),sr.reveal(".benefits-content",benh),sr.reveal(".benefitsbox",benb),sr.reveal(".ecosystem-sp",ecosp),sr.reveal(".roadmap-step",{ duration: 1500 }, 500);
+        $('.js-countdown').countdown($('.js-countdown').attr('data-end-date')).on('update.countdown', function(event) {
+          $('.js-cd-days').html(event.strftime($('.js-countdown').attr('data-days-format')));
+          $('.days').html(event.strftime('day%!D'));
+          $('.js-cd-hours').html(event.strftime($('.js-countdown').attr('data-hours-format')));
+          $('.hours').html(event.strftime('hour%!H'));
+          $('.js-cd-minutes').html(event.strftime($('.js-countdown').attr('data-minutes-format')));
+          $('.minutes').html(event.strftime('minute%!M'));
+          $('.js-cd-seconds').html(event.strftime($('.js-countdown').attr('data-seconds-format')));
+          $('.seconds').html(event.strftime('second%!S'));
+        });
+          $(".use-cases-content").slick({
+          dots: true,
+          arrows: true,
+          autoplay: true,
+          autoplaySpeed: 6000
+        });
+        sr.reveal('.teammember', { duration: 500 }, 50);
+        $(".old-events").slick({
+          dots: false,
+          arrows: true,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          variableWidth: true,
+          centerMode: true,
+          autoPlaySpeed: 1500
+        });
+        $(".news-content").slick({
+          dots: false,
+          arrows: true,
+          slidesToShow: 3, //3 slides
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 992,
+                settings: {
+                slidesToShow: 2, //2
+                slidesToScroll: 1
+                }
+            },
+            {
+              breakpoint: 768,
+                settings: {
+                slidesToShow: 2, //2
+                slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+                }
+            }
+          ]
+        });
+      });
+    </script>
+    
+    <!--  <script src="ggp/gamertoken-js/gamertokenCookies.js"></script>-->
+    <!-- Page hiding snippet (recommended) -->
+    <style>.async-hide { opacity: 0 !important} </style>
+    <script>
+            function customCall(){
+          //(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;
+          //h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+          //(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);
+          //})(window,document.documentElement,'async-hide','dataLayer',4000,{'GTM-TTHCCLP':true});
+            }
+            gamertokenCookies.init({
+                domain:'gamertoken.io',
+                onCall:customCall,
+                confirmText: 'OK',
+                backgroundcolor: 'rgb(26, 175, 151)',
+                color: 'white',
+                alignment: 'top',
+                conclusive: true,
+                cookieName: 'walletCookie',
+                company: 'laurelfoundation',
+                lang: 'en'
+            });
+      </script>
+  </body>
+</html>
